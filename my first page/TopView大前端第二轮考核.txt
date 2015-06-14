@@ -1,0 +1,24 @@
+Your Home Page (个人主页)
+
+Some keywords you may need (一些关键字)
+
+Layout (布局)
+Animation (动态效果)
+Responsive Design (响应式设计)
+Parallax Scrolling (视差滚动)
+Flat Design (扁平化设计)
+Something yours (更重要的是你自己的想法)
+
+Requirements (要求)
+
+No frameworks, no libraries, HTML, CSS and JavaScript only (只可以使用HTML,CSS和JavaScript)
+Packing all your files into a .zip or .rar (打包你所有的文件成.zip或者.rar)
+Send to drakeleung42@gmail.com or lmovingon2014@gmail.com (发送到 drakeleung42@gmail.com 远成大大这里)
+
+Time (时间)
+
+Three weeks, hand in your artworks before June 8, 2015(Monday)
+(三个星期, 在2015-06-08(星期一)前交上你们的艺术品)
+
+show us what you got and Surprise us! :)
+(把你学到的都展示给我们看,靓瞎我们的眼)

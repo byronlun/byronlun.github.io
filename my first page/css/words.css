@@ -1,0 +1,69 @@
+/* words.html特有的样式*/
+.commentText {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+  	text-align: left;
+}
+.commentText p {
+	margin: 10px;
+}
+.commentText label {
+	font-size: 1.4em;
+}
+.commentText textarea {
+	font-size: 1.3em;
+	border: 1px solid #d3d3d3;
+	background-color: #f5f4df;
+	padding: 0.5em;
+	width: 80%;
+}
+.commentText input {
+	font-size: 1.3em;
+	border: 1px solid #d3d3d3;
+	background-color: #f5f4df;
+  	margin-top: 0px;
+  	line-height: 2em;
+ 	padding: 0.2em;
+}
+.commentText #submit {
+	margin-left: 100px;
+	width: 50px;
+	text-align: center;
+}
+.commentText span {
+	margin-left: 78px;
+}
+
+.historyWords {
+	border-bottom: 1px dashed grey;
+}
+.historyWords .name p {
+	font-size: 1.4em;
+	margin: 10px;
+}
+.historyWords .content {
+	font-size: 1.3em;
+	border: 1px solid #d3d3d3;
+	background-color: #f5f4df;
+	margin: 10px;
+	width: 80%;
+}
+.historyWords .content p {
+	margin: 0px;
+	padding: 0.5em;
+}
+.historyWords .time {
+	position: relative;
+	height: 30px;
+	width: 80%;
+	margin: 10px;
+}
+.historyWords .time .date {
+	position: absolute;
+	right: 0px;
+	bottom: 5px;
+}
+.historyWords .time .date p {
+	margin: 0px;
+}

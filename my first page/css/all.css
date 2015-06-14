@@ -1,0 +1,94 @@
+body {
+	font-family: '微软雅黑', '幼圆', '华文行楷', '宋体';
+	width: 960px;
+	margin: 0px auto;
+	margin-top: 50px;
+	color: black;
+	background-image: url(../images/background.jpg);
+	background-attachment: fixed;
+	background-position: center;
+}
+nav {
+	background-color: #5dc0f3;
+	border: 2px solid white;
+	margin: 0px;
+}
+nav ul {
+	width: 960px;
+	height: 34px;
+	list-style-type: none;
+	margin: 0px auto;
+	padding: 0px;
+}
+nav ul li {
+	font-size: 18px;
+	display: inline;
+	width: 80px;
+	height: 24px;
+	background-color: #a5d7f1;
+	margin: 5px 40px;
+	padding: 0;
+	text-align: center;
+	float: left;
+}
+nav ul li a:link, nav ul li a:visited {
+	color: #0b4665;
+	border-bottom: none;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color: #a47f4f;
+}
+
+.leftContent {
+	width: 180px;
+	height: 350px;
+	border: 1px solid white;
+	background-color: #4ec0f2;
+	margin: 0px;
+	padding: 0px 10px;
+	text-align: center;
+	float: left;
+}
+.myPhoto img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+ }
+ .myPhoto img:hover {
+	-webkit-transform: rotate(360deg) scale(1.3);
+	-moz-transform: rotate(360deg) scale(1.3);
+	-ms-transform: rotate(360deg) scale(1.3);
+ }
+.rightContent {
+	margin: 10px 0px 10px 212px;
+}
+.rightContent h2 {
+	color: #3f1bdb;
+	font-family: Georgia, serif;
+	margin-top: 0px;
+}
+footer {
+	clear: right;
+	font-size: 0.9em;
+	border-top: 1px solid grey;
+	margin: 20px 0px 0px 0px;
+	padding: 2px 0px 1px 0px;
+	text-align: center;
+}
+/* 回到顶部 */
+#backTop {
+	position: fixed;
+	bottom: 30px;
+	left: 90%;
+	width: 40px;
+	height: 80px;
+	background-image: url(../images/backTop.jpg);
+	background-size: 40px 80px;
+}
+
+
+
