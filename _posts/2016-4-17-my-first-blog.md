@@ -7,6 +7,7 @@ combineReducers() 所做的只是生成一个函数，这个函数来调用你�
 
 >ES6 用户使用注意
 combineReducers 接收一个对象，可以把所有顶级的 reducer 放到一个独立的文件中，通过 export 暴露出每个 reducer 函数，然后使用 import * as reducers 得到一个以它们名字作为 key 的 object：
+
 ```js
 import { combineReducers } from 'redux';
 import * as reducers from './reducers';
