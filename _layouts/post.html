@@ -4,7 +4,7 @@ layout: default
 
 <article class="post">
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Written on {{ page.date | date_to_string }}
   </div>
 
   <h1>{{ page.title }}</h1>
@@ -13,5 +13,21 @@ layout: default
     {{ content }}
   </div>
 
-  {% include disqus.html %}
+  {% if site.disqus %}
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+
+        var disqus_shortname = '{{ site.disqus }}';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  {% endif %}
 </article>

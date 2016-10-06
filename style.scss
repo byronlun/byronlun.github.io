@@ -36,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
   padding: 0;
 
   @include mobile {
@@ -65,7 +64,7 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  //margin: 15px 0;
 }
 
 a {
@@ -146,13 +145,11 @@ img {
 /* LAYOUT / SECTIONS */
 /*********************/
 
-//
-// .masthead
-//
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
+
+//.wrapper-masthead {
+//  margin-bottom: 50px;
+//}
 
 .masthead {
   padding: 20px 0;
@@ -237,14 +234,11 @@ nav {
   }
 }
 
-//
-// .main
-//
-
 .posts > .post {
-  padding-bottom: 2em;
+  padding: 2em 0;
   border-bottom: 1px solid $lightGray;
 }
+
 
 .posts > .post:last-child {
   padding-bottom: 1em;
@@ -265,9 +259,19 @@ nav {
     margin-top: 10px;
   }
 
+  .entry {
+    margin-bottom: 10px;
+  }
+
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+  }
+
+  .post-time {
+    padding: 0;
+    font-size: 80%;
+    color: gray;
   }
 }
 
@@ -279,8 +283,14 @@ nav {
 }
 
 footer {
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
+  a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
