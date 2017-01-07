@@ -43,7 +43,7 @@ footer-links:
 
 permalink: /posts/:year-:month-:day-:title.html
 
-paginate: 5
+# paginate: 5
 paginate_path: "blog/page:num/"
 
 # Jekyll 3 now only supports Kramdown for Markdown
