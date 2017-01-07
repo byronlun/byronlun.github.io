@@ -3,12 +3,14 @@ layout: default
 ---
 
 <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+  <span class="post-meta"><time datatime="{{ page.date | date_to_string }}">{{ page.date | date_to_string }}</time></span>
+  <div class="past-meta-divider"></div>
   <div class="date">
     Written on {{ page.date | date_to_string }}
   </div>
-
-  <h1>{{ page.title }}</h1>
-
   <div class="entry">
     {{ content }}
   </div>
