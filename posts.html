@@ -6,16 +6,17 @@ title: Posts
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
-      <p class="post-time">
-        <time datatime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time>
-      </p>
-      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-
+      <header class="post-header">
+        <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      </header>
+      <span class="post-meta"><time datatime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time></span>
+      <div class="past-meta-divider"></div>
       <div class="entry">
         {{ post.excerpt }}
       </div>
-
-      <a href="{{ post.url }}" class="read-more">Read More</a>
+      <div>
+        <a href="{{ post.url }}" class="read-more">Read More ></a>
+      </div>
     </article>
   {% endfor %}
 </div>

@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+	background: #f1f4f5;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -26,8 +26,9 @@ body {
 .container {
   margin: 0 auto;
   max-width: 740px;
-  padding: 0 10px;
+  padding: 0 20px;
   width: 100%;
+  background: $white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,7 +73,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $lightGreen;
   }
 }
 
@@ -149,7 +150,7 @@ img {
 .header-container {
   background-color: #4fc08d;
   width: 100%;
-  border-bottom: 6px solid #7AF995;
+  border-bottom: 6px solid $lightGreen;
   padding: 20px 0;
 
   header {
@@ -266,16 +267,19 @@ nav {
 
 .posts > .post {
   padding: 2em 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid #e7e5e5;
+  margin: 0 5%;
 }
 
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
   border-bottom: none;
 }
 
 .post {
+  text-align: center;
+  padding-bottom: 40px;
+
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -284,44 +288,78 @@ nav {
     font-size: 22px;
     font-style: italic;
   }
+  .post-header {
+
+  }
+  .post-title {
+    text-align: center;
+    color: #384455;
+    font-family: "open_sansregular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-bottom: 30px;
+  }
+  .post-meta {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    color: #b1b1b1;
+    background-color: $white;
+    padding: 0 10px;
+  }
+  .past-meta-divider {
+    height: 1px;
+    background-color: #f3f3f3;
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
 
   .comments {
     margin-top: 10px;
   }
 
   .entry {
-    margin-bottom: 10px;
+    margin: 20px 0;
+    font-size: 15px;
+    padding: 2em 0;
   }
 
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
-  }
+    color: #b1b1b1;
+    border: 1px solid #b1b1b1;
+    border-radius: 31px;
+    padding: 15px 20px;
 
-  .post-time {
-    padding: 0;
-    font-size: 80%;
-    color: gray;
+    &:hover, &:active {
+      color: $lightGreen;
+    }
   }
 }
 
+// footer
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
-}
+  margin: 50px 0;
+  .footer-container {
+    // margin: 30px 0;
+  }
+  footer {
+    padding: 10px 0;
+    text-align: center;
 
-footer {
-  padding: 10px 0;
-  text-align: center;
-  a {
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    vertical-align: middle;
+    .footer-copyright {
+      margin-bottom: 12px;
+    }
+
+    a {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      vertical-align: middle;
+    }
   }
 }
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
