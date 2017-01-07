@@ -26,3 +26,12 @@ $georgia: Georgia, serif;
     @content;
   }
 }
+
+@keyframes aHover {
+  from {
+    color: $black;
+  }
+  to {
+    color: $lightGreen;
+  }
+}
