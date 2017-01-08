@@ -5,22 +5,22 @@ layout: default
 <article class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
+    <span class="post-meta"><time datatime="{{ page.date | date_to_string }}">{{ page.date | date_to_string }}</time></span>
   </header>
-  <span class="post-meta"><time datatime="{{ page.date | date_to_string }}">{{ page.date | date_to_string }}</time></span>
   <div class="past-meta-divider"></div>
-  <div class="date">
-    Written on {{ page.date | date_to_string }}
-  </div>
-  <div class="entry">
+  <div class="entry post-blog">
     {{ content }}
   </div>
 
-  {% if site.disqus %}
+  <!-- {% if site.disqus %} -->
   <div class="comments">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
 
-        var disqus_shortname = 'Byronlun';
+        var disqus_shortname = 'http-byronlun-github-io';
+        var disqus_developer = 1; // This turns developer mode on
+                               // Make sure you remove this before you push this
+                              // to your live site.
 
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -31,5 +31,5 @@ layout: default
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-  {% endif %}
+  <!-- {% endif %} -->
 </article>

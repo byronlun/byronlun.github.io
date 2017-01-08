@@ -5,7 +5,7 @@
 // IMPORTS
 //
 
-@import "reset";
+// @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
@@ -66,6 +66,7 @@ h4 {
 
 p {
   //margin: 15px 0;
+  line-height: 2;
 }
 
 a {
@@ -74,7 +75,7 @@ a {
 	cursor: pointer;
   &:hover, &:active {
     color: $lightGreen;
-    animation: aHover 0.5s;
+    // animation: aHover 0.5s;
   }
 }
 
@@ -276,10 +277,12 @@ nav {
   border-bottom: none;
 }
 
-.post {
+.post-home {
   text-align: center;
-  padding: 2em 0;
+}
 
+.post {
+  padding: 2em 0;
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -289,7 +292,7 @@ nav {
     font-style: italic;
   }
   .post-header {
-
+    text-align: center;
   }
   .post-title {
     text-align: center;
@@ -310,6 +313,17 @@ nav {
     background-color: #f3f3f3;
     margin-top: -10px;
     margin-bottom: 30px;
+  }
+
+  .post-blog {
+    a {
+      color: $lightGreen;
+      text-decoration: underline;
+      &:hover, &:active {
+        color: $lightGreen;
+        text-decoration: none;
+      }
+    }
   }
 
   .comments {
