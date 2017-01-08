@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Start learning redux just api
 category: Byronlun Fang
 date: 2016-4-17

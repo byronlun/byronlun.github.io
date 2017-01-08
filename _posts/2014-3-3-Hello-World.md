@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: You're up and running!
 category: Byronlun Fang
 date: 2014-3-3
