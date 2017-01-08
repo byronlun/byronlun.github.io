@@ -13,7 +13,11 @@ title: Home
       <div class="past-meta-divider"></div>
       <div class="entry">
         <a href="{{ post.url }}">
-          {{ post.excerpt }}
+          {% if page.summary %}
+            {{ post.summary }}
+          {% else %}
+            {{ post.excerpt }}
+          {% endif %}
         </a>
       </div>
       <div>
