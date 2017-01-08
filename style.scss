@@ -14,13 +14,18 @@
 /**************/
 
 html {
+  margin: 0;
+  padding: 0;
   font-size: 100%;
 }
 
 body {
+  margin: 0;
+  padding: 0;
 	background: #f1f4f5;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+
 }
 
 .container {
@@ -46,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  margin: 0;
   a {
     color: inherit;
   }
@@ -281,16 +287,22 @@ nav {
   text-align: center;
 }
 
+.posts {
+  // posts
+  .post-single {
+    display: flex;
+    justify-content: space-between;
+  }
+  .post-time {
+    font-size: 16px;
+    color: #b1b1b1;
+  }
+}
+
 .post {
   padding: 2em 0;
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
+  
+  // home
   .post-header {
     text-align: center;
   }
@@ -314,7 +326,16 @@ nav {
     margin-top: -10px;
     margin-bottom: 30px;
   }
-
+  
+  // blog文章内容的设置
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
   .post-blog {
     a {
       color: $lightGreen;

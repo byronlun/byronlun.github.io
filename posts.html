@@ -4,25 +4,10 @@ title: Posts
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
-    <article class="post post-home">
-      <header class="post-header">
-        <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <span class="post-meta"><time datatime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time></span>
-      </header>
-      <div class="past-meta-divider"></div>
-      <div class="entry">
-        <a href="{{ post.url }}">
-        {% if page.summary %}
-          {{ post.summary }}
-        {% else %}
-          {{ post.excerpt }}
-        {% endif %}
-        </a>
-      </div>
-      <div>
-        <a href="{{ post.url }}" class="read-more">Read More ></a>
-      </div>
-    </article>
-  {% endfor %}
+  {% for post in site.posts%}
+  <div class="post-single">
+    <p class="post-single-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
+    <p class="post-time"><time datatime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time></p>
+  </div>
+  {% endfor%}
 </div>
